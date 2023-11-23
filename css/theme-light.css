@@ -1,0 +1,12 @@
+div.main-header .title {
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
+
+div.main-navbar {
+    background-color: rgb(77, 67, 114);
+}
+
+div.main-navbar > .wrapper > div:hover {
+    background-color: rgb(101, 88, 148);
+}

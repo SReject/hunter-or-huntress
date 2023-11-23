@@ -1,0 +1,123 @@
+@import "theme-dark.css";
+@import "theme-light.css";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+
+    font-family: Open Sans, open-sans, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+}
+
+div.main-header,
+div.main-navbar,
+div.main-content,
+div.main-footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+div.main-header > .wrapper,
+div.main-navbar > .wrapper,
+div.main-content > .wrapper,
+div.main-footer > .wrapper {
+    width: 100%;
+    max-width: 1280px;
+    z-index: 2;
+}
+
+/* Page Header */
+div.main-header:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    opacity: 0.35;
+    background-image: url("../media/cover.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 1;
+}
+div.main-header .title {
+    padding: 2rem 1rem;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+div.main-header .title > a,
+div.main-header .title > a:hover,
+div.main-header .title > a:visited {
+    text-decoration: none;
+    color: inherit;
+    font-family: Papyrus, fantasy, TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+}
+
+/* Page Navbar */
+div.main-navbar > .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.main-navbar > .wrapper > div {
+    flex: 1 1 auto;
+    color: white;
+}
+div.main-navbar .heading {
+    display: flex;
+    padding: 1rem;
+    cursor: pointer;
+}
+div.main-navbar .heading > .icon {
+    box-sizing: border-box;
+    padding: 0rem 0.5em;
+    text-align: center;
+    flex: 0 0 auto;
+
+}
+div.main-navbar .heading > .title {
+    flex: 1 1 auto;
+    user-select: none;
+}
+div.main-navbar .menu:not(:hover) > .heading::before {
+    flex: 0 0 auto;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    display: block;
+    font-weight: 900;
+    box-sizing: border-box;
+    width: 1em;
+    text-align: center;
+}
+div.main-navbar .menu:hover > .heading::before {
+    flex: 0 0 auto;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d7";
+    display: block;
+    font-weight: 900;
+    box-sizing: border-box;
+    width: 1em;
+    text-align: center;
+}
+div.main-navbar .menu {
+    position: relative;
+}
+div.main-navbar .menu > ul {
+    margin: 0px;
+    padding: 1rem;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: inherit;
+    list-style-type: none;
+    min-width: 100%;
+    z-index: 5;
+    display: none;
+}
+div.main-navbar .menu:hover > ul {
+    display: block;
+}
