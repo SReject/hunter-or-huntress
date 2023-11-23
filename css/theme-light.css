@@ -10,3 +10,15 @@ div.main-navbar {
 div.main-navbar > .wrapper > div:hover {
     background-color: rgb(101, 88, 148);
 }
+
+div.main-navbar > .wrapper > div,
+div.main-navbar > .wrapper > a {
+    color: white;
+}
+div.main-navbar a {
+    color: inherit;
+    text-decoration: none;
+}
+div.main-navbar a:hover {
+    background-color: rgb(132, 115, 196);
+}

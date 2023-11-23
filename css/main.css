@@ -64,23 +64,29 @@ div.main-navbar > .wrapper {
     display: flex;
     flex-wrap: wrap;
 }
-div.main-navbar > .wrapper > div {
+div.main-navbar > .wrapper > div,
+div.main-navbar > .wrapper a {
     flex: 1 1 auto;
-    color: white;
 }
 div.main-navbar .heading {
     display: flex;
     padding: 1rem;
     cursor: pointer;
 }
-div.main-navbar .heading > .icon {
+div.main-navbar a {
     box-sizing: border-box;
-    padding: 0rem 0.5em;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.5em 0em;
+}
+div.main-navbar .icon {
+    box-sizing: border-box;
+    width: 2em;
     text-align: center;
     flex: 0 0 auto;
-
 }
-div.main-navbar .heading > .title {
+div.main-navbar .title {
     flex: 1 1 auto;
     user-select: none;
 }
