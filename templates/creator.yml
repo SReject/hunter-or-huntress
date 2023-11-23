@@ -1,0 +1,27 @@
+# The creators display name
+name: "MyUserName"
+
+
+# List one or more fields of which the creator has contributed
+fields:
+
+  # allowed values:
+  - "author"
+  - "artist"
+  - "developer"
+
+
+# List one or more platforms of which the creator is active
+platforms:
+
+  # name: Name of platform
+  # url: Direct link to creator's page on the platform
+  # type: The type of platform; allowed values:
+  #   publishing - Where stories/media by the creator gets posted
+  #   social - Social-based platforms such as discord or twitter
+  #   backing - Funding page for the creator
+  #   misc - anything else
+
+  - name: "reddit"
+    url: "https://reddit.com/user/example"
+    type: "publishing"

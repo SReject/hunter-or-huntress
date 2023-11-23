@@ -1,0 +1,7 @@
+type: "collection"
+
+order:
+  - "field-trip"
+  - "field-trip-2"
+  - "grevis-reminiscence"
+  - "tiguan"

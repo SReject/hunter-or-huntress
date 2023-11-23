@@ -1,0 +1,26 @@
+name: Tigra21
+
+fields:
+  - "author"
+  - "artist"
+
+platforms:
+  - name: "Reddit"
+    url: "https://reddit.com/user/tigra21"
+    type: "publishing"
+
+  - name: "Royal Road"
+    url: "https://www.royalroad.com/profile/201445"
+    type: "publishing"
+
+  - name: "Discord"
+    url: "https://discord.gg/36Rswfztnu"
+    type: "social"
+
+  - name: "Patreon"
+    url: "https://www.patreon.com/HunterOrHuntress"
+    type: "backing"
+
+  - name: "Ko-fi"
+    url: "https://ko-fi.com/tigra"
+    type: "backing"
