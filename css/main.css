@@ -78,7 +78,6 @@ div.main-navbar a {
     display: flex;
     cursor: pointer;
     text-decoration: none;
-    padding: 0.5em 0em;
 }
 div.main-navbar .icon {
     box-sizing: border-box;
@@ -115,7 +114,7 @@ div.main-navbar .menu {
 }
 div.main-navbar .menu > ul {
     margin: 0px;
-    padding: 1rem;
+    padding: 0px;
     position: absolute;
     box-sizing: border-box;
     background-color: inherit;
@@ -126,4 +125,7 @@ div.main-navbar .menu > ul {
 }
 div.main-navbar .menu:hover > ul {
     display: block;
+}
+div.main-navbar .menu a {
+    padding: 0.5em 1em;
 }
