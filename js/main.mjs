@@ -15,7 +15,7 @@ const getJSONData = async (name) => {
         }
     }
 }
-const [creators, stories, media] = Promise.all([
+const [creators, stories, media] = await Promise.all([
     getJSONData('creators'),
     getJSONData('stories'),
     getJSONData('media')
