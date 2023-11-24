@@ -1,4 +1,9 @@
+display: "All Stories"
+
+name: "stories"
+
+type: "colleciton"
+
 order:
   - "main"
   - "sidestories"
-  - "fanfics"
