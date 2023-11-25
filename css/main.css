@@ -1,5 +1,6 @@
+@import "theme-default.css";
 @import "theme-dark.css";
-@import "theme-light.css";
+
 
 html, body {
     margin: 0;
@@ -72,6 +73,8 @@ div.main-navbar {
     z-index: 3;
 }
 div.main-navbar > .wrapper {
+    padding-left: 1em;
+    padding-right: 1em;
     display: flex;
     flex-wrap: wrap;
     z-index: 3;
@@ -79,11 +82,15 @@ div.main-navbar > .wrapper {
 div.main-navbar > .wrapper > div,
 div.main-navbar > .wrapper a {
     flex: 1 1 auto;
+    white-space: nowrap;
 }
 div.main-navbar .heading {
     display: flex;
     padding: 0.5rem;
     cursor: pointer;
+}
+div.main-navbar .heading .title {
+    font-weight: bold;
 }
 div.main-navbar a {
     box-sizing: border-box;
@@ -100,6 +107,9 @@ div.main-navbar .icon {
 div.main-navbar .title {
     flex: 1 1 auto;
     user-select: none;
+}
+div.main-navbar .menu {
+    position: relative;
 }
 div.main-navbar .menu:not(:hover) > .heading::before {
     flex: 0 0 auto;
@@ -121,9 +131,6 @@ div.main-navbar .menu:hover > .heading::before {
     width: 1em;
     text-align: center;
 }
-div.main-navbar .menu {
-    position: relative;
-}
 div.main-navbar .menu > ul {
     margin: 0px;
     padding: 0px;
@@ -131,7 +138,7 @@ div.main-navbar .menu > ul {
     box-sizing: border-box;
     background-color: inherit;
     list-style-type: none;
-    min-width: 100%;
+    min-width: max(100%, 250px);
     z-index: 5;
     display: none;
 }
